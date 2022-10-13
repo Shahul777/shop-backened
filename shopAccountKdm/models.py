@@ -55,13 +55,13 @@ class AccountExpenses(models.Model):
     TotalIncome = models.IntegerField()
     OpeningBalance = models.IntegerField()
     NetProfit= models.IntegerField()
-    GetTime=models.IntegerField()
+    GetTime=models.BigIntegerField()
 
 class LabourExpenses(models.Model):
     
     Date = models.DateField()
     Day =models.CharField(max_length=10)
-    GetTime=models.IntegerField()
+    GetTime=models.BigIntegerField()
     TajPresent = models.IntegerField()
     TajExpense = models.IntegerField()
     NoorPresent = models.IntegerField()
