@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('kodambakkam/',include(router.urls)),
     path('trustpuram/',include(router.urls)),
+    path('house/',include(router.urls)),
 ]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)

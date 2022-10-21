@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'shopAccountKdm',
     'shopAccountTpm',
+    'houseAccount',
     'rest_framework',
     'corsheaders'
 ]
