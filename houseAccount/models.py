@@ -16,6 +16,8 @@ class AccountExpenses(models.Model):
     PaperCost = models.IntegerField()
     BlackTonerCost = models.IntegerField()
     ColourTonerCost = models.IntegerField()
+    Bindings = models.IntegerField(default=0)
+    Others = models.IntegerField(default=0)
     BlackMachineMaintanence = models.IntegerField()
     ColourMachineMaintanence = models.IntegerField()
     MoneyDeposit = models.IntegerField()
