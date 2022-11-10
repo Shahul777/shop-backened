@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-ys#u2o80@kf$zmkhb58ni)4_+tn#=pb6l!a44^=hn!#%%rtpt6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','shop-new-backened.herokuapp.com','shopbackened.onrender.com']
-
+# ALLOWED_HOSTS = ['127.0.0.1','shop-new-backened.herokuapp.com','shopbackened.onrender.com']
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
