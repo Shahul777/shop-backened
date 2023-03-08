@@ -12,3 +12,13 @@ class LabourExpensesViewset(viewsets.ModelViewSet):
 class RateSheetViewset(viewsets.ModelViewSet):
     queryset = models.RateSheet.objects.all()
     serializer_class = serializers.RateSheetSerializer
+
+class MonthlyEntryKdmViewset(viewsets.ModelViewSet):
+    queryset = models.MonthlyEntryKdm.objects.all()
+    serializer_class = serializers.MonthlyEntryKdmSerializer
+
+class CombinedEntryViewset(viewsets.ModelViewSet):
+    queryset = models.CombinedEntry.objects.all()
+    serializer_class = serializers.CombinedEntrySerializer
+
+    

@@ -67,3 +67,34 @@ class LabourExpenses(models.Model):
     isRasheedHalfDay =models.IntegerField()
     isAssanHalfDay=models.IntegerField()
     isManiHalfDay=models.IntegerField()
+class MonthlyEntryTpm(models.Model):
+    Month = models.CharField(max_length=200)
+    Year = models.IntegerField()
+    TotalIncome = models.IntegerField()
+    NetProfit = models.IntegerField()
+    TotalExpense = models.IntegerField()
+    BlackReading = models.IntegerField()
+    ColourReading = models.IntegerField()
+    
+    AssanPresent = models.DecimalField(default=0,max_digits=9 , decimal_places=1)
+    ManiPresent = models.DecimalField(default=0,max_digits=9 , decimal_places=1)
+    RasheedPresent = models.DecimalField(default=0,max_digits=9 , decimal_places=1)
+    
+    
+    LabourSalary = models.IntegerField()
+    Rent = models.IntegerField()
+    CurrentBill = models.IntegerField()
+    Expenses = models.IntegerField()
+    ExpenseCalculated = models.IntegerField()
+    ExpensePercentCalculate =  models.IntegerField()
+
+    
+    PaperDay1 = models.IntegerField()
+    PaperLast = models.IntegerField()
+    PaperArrivedTotal = models.IntegerField()
+    PaperUsed = models.IntegerField()
+    PaperCost = models.IntegerField()
+    PaperSent = models.IntegerField(default=0)
+    isEdited = models.IntegerField()
+
+    isExecuted = models.IntegerField()

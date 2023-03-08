@@ -10,3 +10,8 @@ class AccountExpensesViewset2(viewsets.ModelViewSet):
 class LabourExpensesViewset2(viewsets.ModelViewSet):
     queryset = models.LabourExpenses.objects.all()
     serializer_class = serializers.LabourExpensesSerializer
+
+
+class MonthlyEntryTpmViewset(viewsets.ModelViewSet):
+    queryset = models.MonthlyEntryTpm.objects.all()
+    serializer_class = serializers.MonthlyEntryTpmSerializer

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+# import pytesseract
 from pathlib import Path
 import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-ys#u2o80@kf$zmkhb58ni)4_+tn#=pb6l!a44^=hn!#%%rtpt6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['127.0.0.1','shop-new-backened.herokuapp.com','shopbackened.onrender.com']
-ALLOWED_HOSTS = ['127.0.0.1','shop-new-backened.herokuapp.com','shopbackened.onrender.com','shopbackened.up.railway.app']
 
+#ALLOWED_HOSTS = ['127.0.0.1','*','shop-new-backened.herokuapp.com','shopbackened.onrender.com','shopbackened.up.railway.app']
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -44,6 +44,18 @@ INSTALLED_APPS = [
     'corsheaders'
 ]
 CORS_ORIGIN_ALLOW_ALL =True
+
+
+
+
+# TesseractPath = r'C:\Users\shahul.m\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'  
+# TesseractPath = r'C:\Users\shahul.m\Documents\shop_backened_enhancement\shop_project\Tesseract-OCR\tesseract.exe'
+
+
+# TesseractPath =  os.path.join(BASE_DIR,'shop_project','Tesseract-OCR','tesseract.exe')
+# pytesseract.pytesseract.tesseract_cmd = TesseractPath
+
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
