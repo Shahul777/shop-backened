@@ -139,5 +139,37 @@ class CombinedEntry(models.Model):
     isExecuted = models.IntegerField()
 
 
+class PredictionData(models.Model):
+    MonthString = models.CharField(max_length=200)
+    
+    Year = models.IntegerField()
+    Paper = models.IntegerField()
+    PaperPending = models.IntegerField()
+    Salary = models.IntegerField()
+    SalaryPending = models.IntegerField()
+    Toner = models.IntegerField()
+    TonerPending=  models.IntegerField()
+    Kl = models.IntegerField()
+    KlPending=models.IntegerField()
+    Vadapalani=models.IntegerField()
+    VadapalaniPending=models.IntegerField()
+    David=models.IntegerField()
+    DavidPending =models.IntegerField()
+    RentTpm=models.IntegerField()
+    RentTpmPending =models.IntegerField()
+    RentAshref =models.IntegerField()
+    RentAshrefPending =models.IntegerField()
+    RentNoushad =models.IntegerField()
+    RentNoushadPending =models.IntegerField()
+    Rent2 =models.IntegerField()
+    Rent2Pending =models.IntegerField()
+    Current =models.IntegerField()
+    CurrentPending =models.IntegerField()
+    Others =models.IntegerField()
+    OthersPending = models.IntegerField()
+
+
+
+
 
 

@@ -22,3 +22,6 @@ class CombinedEntryViewset(viewsets.ModelViewSet):
     serializer_class = serializers.CombinedEntrySerializer
 
     
+class PredictionDataViewset(viewsets.ModelViewSet):
+    queryset = models.PredictionData.objects.all()
+    serializer_class = serializers.PredictionDataSerializer

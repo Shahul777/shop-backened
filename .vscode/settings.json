@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "containers-us-west-66.railway.app",
+            "port": 6694,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "railway",
+            "database": "railway",
+            "username": "postgres"
+        }
+    ]
+}

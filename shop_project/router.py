@@ -1,4 +1,4 @@
-from shopAccountKdm.viewsets import AccountExpensesViewset,LabourExpensesViewset,RateSheetViewset,MonthlyEntryKdmViewset,CombinedEntryViewset
+from shopAccountKdm.viewsets import AccountExpensesViewset,LabourExpensesViewset,RateSheetViewset,MonthlyEntryKdmViewset,CombinedEntryViewset,PredictionDataViewset
 
 from houseAccount.viewsets import AccountExpensesViewset3,RateSheetViewset3
 from shopAccountTpm.viewsets import AccountExpensesViewset2,LabourExpensesViewset2,MonthlyEntryTpmViewset
@@ -9,7 +9,7 @@ router.register('accounts', AccountExpensesViewset)
 router.register('labours', LabourExpensesViewset)
 router.register('kdmMonth',MonthlyEntryKdmViewset)
 router.register('combinedEntry',CombinedEntryViewset)
-
+router.register('predictionData',PredictionDataViewset)
 
 
 

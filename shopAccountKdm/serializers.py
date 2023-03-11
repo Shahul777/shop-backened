@@ -1,6 +1,6 @@
 from dataclasses import fields
 from rest_framework import serializers
-from shopAccountKdm.models import AccountExpenses,LabourExpenses,RateSheet,MonthlyEntryKdm,CombinedEntry
+from shopAccountKdm.models import AccountExpenses,LabourExpenses,RateSheet,MonthlyEntryKdm,CombinedEntry,PredictionData
 
 class AccountExpensesSerializer(serializers.ModelSerializer):
     class Meta:
@@ -24,4 +24,9 @@ class MonthlyEntryKdmSerializer(serializers.ModelSerializer):
 class CombinedEntrySerializer(serializers.ModelSerializer):
     class Meta:
         model=CombinedEntry
+        fields = '__all__'
+
+class PredictionDataSerializer(serializers.ModelSerializer):
+    class Meta:
+        model=PredictionData
         fields = '__all__'
