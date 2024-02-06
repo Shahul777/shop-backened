@@ -103,14 +103,23 @@ WSGI_APPLICATION = 'shop_project.wsgi.application'
 # }
 
 DATABASES = {
-    'default': {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql',
+    #     'NAME':  'railway',
+    #     'USER':'postgres',
+    #     'PASSWORD': 'mZptZjt6selI2VRwZl8k',
+    #     'HOST': 'containers-us-west-66.railway.app',
+    #     'PORT':'6694'
+    # }
+ 'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME':  'railway',
         'USER':'postgres',
-        'PASSWORD': 'mZptZjt6selI2VRwZl8k',
-        'HOST': 'containers-us-west-66.railway.app',
-        'PORT':'6694'
+        'PASSWORD': 'FDg13Dc5gbgcggGF4AFC6gdBd4FGf4dC',
+        'HOST': 'viaduct.proxy.rlwy.net',
+        'PORT':'21583'
     }
+    
 }
 
 
