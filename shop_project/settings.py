@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 # import pytesseract
 from pathlib import Path
 import os
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -119,9 +120,9 @@ DATABASES = {
         'HOST': 'viaduct.proxy.rlwy.net',
         'PORT':'21583'
     }
-    
-}
 
+}
+DATABASES["default"] = dj_database_url.parse("postgres://xerox_shop_user:9AMgRC93vJcwMfE4tOf1WSjxyNQyYqqt@dpg-cplilpdds78s73ekuoag-a.oregon-postgres.render.com/xerox_shop")
 
 
 
