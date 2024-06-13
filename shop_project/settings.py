@@ -121,13 +121,18 @@ DATABASES = {
         'PORT':'21583'
     }
 
+
 }
-DATABASES["default"] = dj_database_url.parse("postgres://xerox_shop_user:9AMgRC93vJcwMfE4tOf1WSjxyNQyYqqt@dpg-cplilpdds78s73ekuoag-a.oregon-postgres.render.com/xerox_shop")
+# DATABASES["default"] = dj_database_url.parse("postgres://xerox_shop_user:9AMgRC93vJcwMfE4tOf1WSjxyNQyYqqt@dpg-cplilpdds78s73ekuoag-a.oregon-postgres.render.com/xerox_shop")
+DATABASES["default"] = dj_database_url.parse("postgres://postgres.kzzurfojmqokxutadtrh:shahulhameed7@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres")
+# username: shahul
+# password : shahul7 
+# for admin credentials
 
-
-
-# Password validation
-# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+# username: shahul
+# password : shahulhameed7  
+# for supabase free postgres db
+# https://supabase.com/dashboard/project/kzzurfojmqokxutadtrh/storage/buckets
 
 AUTH_PASSWORD_VALIDATORS = [
     {
